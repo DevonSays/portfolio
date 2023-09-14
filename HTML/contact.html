@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Devon Golden</title>
+  <link rel="stylesheet" href="../Styles/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+  </header>
+
+<!-- Navigation menu -->
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../html/projects.html">Projects</a></li>
+      <li><a href="../html/contact.html">Contact</a></li>
+      <li><a href="../html/save-for-later.html">Saved for Later</a></li>
+    </ul>
+  </nav>
+
+<!-- Button for hiding/showing -->
+<button class="toggle-button">Want to only see the important stuff?</button>
+  
+<!-- Contact Information -->
+  <section class="contact-info" class="save-for-later-section">
+    <h2>Contact Information</h2>
+    <p>Email: <a href="mailto:hi.devongolden.me">hi@devongolden.me</a></p>
+    <p>Whatsapp: <a href="https://wa.me/+821025615915">Click here to send a message</a></p>
+    <!-- <button id="save-for-later-contact-info" data-item-id="contact-info">Save for Later</button> -->
+  </section>
+
+<!-- Contact Form -->
+  <section class="contact-section save-for-later-section content-to-toggle">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="contact-reason">What is your reason for contacting me?</label>
+      <label>
+        <input type="radio" name="contact-reason">
+          Schedule a Meeting
+      </label>
+      <label>
+          <input type="radio" name="contact-reason">
+          Request a Quote
+      </label>
+      <label>
+          <input type="radio" name="contact-reason">
+          Other
+      </label>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <input type="submit" value="Submit">
+    </form>
+    <!-- <button id="save-for-later-contact-form" data-item-id="contact-form">Save for Later</button> -->
+  </section>
+
+<!-- List of testimonials -->
+  <section class="testimonials save-for-later-section content-to-toggle">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <p>"Devon's projects are nothing short of genius! They've created beautifully functional websites that showcase their coding prowess. Always impressed with their work!"</p>
+      <p class="author">- Michelle S.</p>
+    </div>
+    <div class="testimonial">
+      <p>"Conscious Coding's website is a game-changer! The user experience is seamless, and it's clear that a lot of thought and expertise went into its development. Kudos!"</p>
+      <p class="author">- Alex R.</p>
+    </div>
+    <div class="testimonial">
+      <p>"Speak to Animals' platform is a unique gem. The site's intuitive design and functionality make it a joy to navigate. A true example of innovative web development!"</p>
+      <p class="author">- Emily L.</p>
+    </div>
+    <!-- <button id="save-for-later-testimonials" data-item-id="testimonials">Save for Later</button> -->
+  </section>
+
+<!-- Footer Area -->
+  <footer class="footer-container">
+    <div class="footer-column">
+      <h2>Menu</h2>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/projects.html">Projects</a></li>
+          <li><a href="../html/contact.html">Contact</a></li>
+          <li><a href="../html/save-for-later.html">Saved</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-column">
+      <h2>Contact</h2>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="https://github.com/">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+          <li><a href="mailto:hi@devongolden.me">Email</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-column">
+      <h2>Subscribe to my Newsletter</h2>
+      <div class="newsletter">
+        <form>
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="Script/main.js"></script>
+</body>
+</html>

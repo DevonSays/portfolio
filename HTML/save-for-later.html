@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saved for Later - Devon Golden</title>
+  <link rel="stylesheet" href="../Styles/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Saved for Later</h1>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../html/projects.html">Projects</a></li>
+      <li><a href="../html/contact.html">Contact</a></li>
+      <li class="has-dropdown"><a href="../html/save-for-later.html">Saved for Later</a>
+        <ul class="dropdown-menu">
+          <li><a href="#save-for-later">Saved Items Section</a></li>
+          <li><a href="#comments">Comments Section</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Save for Later Section -->
+  <section class="save-for-later" id="save-for-later">
+    <h2>Here is a List of Your Saved Items:</h2>
+    <ul id="savedItemsList">
+      <!-- Saved items -->
+    </ul>
+  </section>
+
+  <!-- Container for comments -->
+<div id="comments-container">
+  <h2>Comments</h2>
+  <ul id="comments-list">
+    <!-- Comments will be added here dynamically -->
+  </ul>
+</div>
+
+<!-- Place for people to leave comments -->
+<section class="comments" id="comments">
+  <h2>Leave a Comment</h2>
+    <form id="comment-form" onsubmit="getComment(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+  
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer-container">
+    <div class="footer-column">
+      <h2>Menu</h2>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/projects.html">Projects</a></li>
+          <li><a href="../html/contact.html">Contact</a></li>
+          <li><a href="../html/save-for-later.html">Saved</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-column">
+      <h2>Contact</h2>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="https://github.com/">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+          <li><a href="mailto:hi@devongolden.me">Email</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-column">
+      <h2>Subscribe to my Newsletter</h2>
+      <div class="newsletter">
+        <form>
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../Script/main.js"></script>
+</body>
+</html>

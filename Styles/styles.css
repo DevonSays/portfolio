@@ -1,0 +1,407 @@
+/* Overall Content Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+header {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Navigation Menu */
+nav {
+  background-color: #000000;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* About Me Section */
+.about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-content img {
+  max-width: 50%;
+  margin-right: 20px;
+}
+
+.about-content p {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.about-me, .latest-project, .projects-container {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.about-me h2, .latest-project h2, .projects h2 {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 0.5rem;
+}
+
+.button, .save-button, .toggle-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #333;
+  text-decoration: none;
+  border-radius: 20px;
+  border: 2px solid #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover, .save-button:hover, .toggle-button:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Projects Section */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.project-box {
+  flex: 0 0 calc(30% - 2rem);
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.project-box img {
+  max-width: 100%;
+}
+
+/* Cursor Style for Links when Hovering Over the Project Box */
+.project-box a {
+  cursor: pointer;
+}
+
+/* Table Styles on Project Page */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+}
+
+th, td {
+  border: 1px solid #ffffff;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #000000;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Styles Testimonials Side by Side */
+.testimonials {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.testimonial p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.author {
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* Styles Footer into 3 Columns */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 1rem;
+}
+
+.footer-column h2 {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 0.5rem;
+}
+
+.footer-nav ul {
+  padding: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: #000000;
+}
+
+.social-links img {
+  width: 32px;
+  height: 32px;
+  margin-right: 1rem;
+}
+
+/* Styles for the Newsletter Form */
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter input[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.newsletter input[type="submit"]:hover {
+  background-color: #cccccc;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.contact-section h2 {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 0.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #cccccc;
+}
+
+/* Saved button Styles */
+.saved-btn {
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Animation Element */
+.animation-element {
+  opacity: 0;
+  position: relative;
+  left: -100px;
+}
+
+/* Media query for small devices */
+@media screen and (max-width: 678px) {
+  .animation-element.slide-left img {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 5px;
+  }
+}
+
+ /* Save for later images */
+.save-for-later img {
+  max-width: 150px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+}
+
+/* Some Styling for the Like Button */
+.like-btn {
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.like-btn.liked {
+  background-color: red;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  border: 1px solid #ccc;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.dropdown-menu li {
+  padding: 8px;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+nav ul li.has-dropdown > a::after {
+  content: '▼';
+  margin-left: 5px;
+}
+
+/* Specific styling for the effect-button */
+#effect-button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Styling for the Comments Section */
+#comments-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#comments-list li {
+  max-width: 300px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #8a8383;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+#comments-list li:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -8px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #f0f0f0 transparent transparent;
+}
+
+#comments-list li:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -9px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent #ccc transparent transparent;
+}
